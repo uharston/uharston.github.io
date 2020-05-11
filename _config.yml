@@ -1,11 +1,11 @@
 # Site settings
 author: Uriah Harston
-title: 
+title: Why I decided to become a Software Engineer?
 header-img: img/home-bg.png
 email: uharston@gmail.com
 copyright_name: Uriah Harston
 description: > # this means to ignore newlines until "baseurl:"
-  
+  TEST
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  uharston
