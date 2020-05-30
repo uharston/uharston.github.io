@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sneaker Finder Ruby Gem "
-date:       2020-05-30 23:36:25 +0000
+date:       2020-05-30 19:36:25 -0400
 permalink:  sneaker_finder_ruby_gem
 ---
 
