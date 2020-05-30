@@ -10,7 +10,20 @@ After a dedicated 4 weeks of an eat, sleep, and code routine here at this amazin
 
 The purpose of this gem is to scrape the inventory from a well known e-commerce store that has a collection of rare, hard-to-find sneakers that collectors are looking for. I used `open-uri` to request this data, and `nokogiri` to parse the html into objects that could receive an iterator such as `.each` or `map`. 
 
-```    def self.scrape_brand_index_page_one(index_url)
+```
+def self.scrape_brand_index_page_one(index_url)
+        doc = Nokogiri::HTML(open(index_url))
+        shoe_collection_array = []
+        doc.css(".ProductList li").map do |shoe|
+            hash = {}
+            hash[:shoe_name] = shoe.css(".ProductDetails a").first.text
+            hash[:price] = shoe.css(".ProductPriceRating em").text
+            hash[:shoe_href] = shoe.css(".ProductDetails a").first['href']
+            hash
+        end
+    end
+
+```  def self.scrape_brand_index_page_one(index_url)
         doc = Nokogiri::HTML(open(index_url))
         shoe_collection_array = []
         doc.css(".ProductList li").map do |shoe|
