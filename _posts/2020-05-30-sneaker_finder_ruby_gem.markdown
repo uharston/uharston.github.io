@@ -40,7 +40,7 @@ In the CLI,  when the user request to see a collection of shoes, this method wo
 
 `#each` is quite useful when you only want to `puts` some data. With this gem, I did find another use for it that was a pleasant surprise. 
 
-A key objective of this gem is to only scrape the necessary data. Only to look for information if it is requested. Therefore when a user would like to see more information on a single and specific shoe, it is necessary to scrape this data, update what we know on this shoe, and then display this data. So instead of retrieving information for a **collection **of shoes, we are retrieving information for a **single** shoe. Programmatically, speaking instead of an array of hashes, we are working with a single hash. 
+A key objective of this gem is to only scrape the necessary data. Only to look for information if it is requested. Therefore when a user would like to see more information on a single and specific shoe, it is necessary to scrape this data, update what we know on this shoe, and then display this data. So instead of retrieving information for a **collection** of shoes, we are retrieving information for a **single**  shoe. Programmatically, speaking instead of an array of hashes, we are working with a single hash. 
 
 In the below example we see that `#each` is used to simply modify the content of our `hash` and the `# self.shoe_details` then returns this hash. 
 
