@@ -9,6 +9,8 @@ permalink:  sneaker_finder_ruby_gem
 
 After a dedicated 4 weeks of an eat, sleep, and code routine here at this amazing Flatiron program, I arrived at a milestone, my first CLI project. Henceforth, the birth of the Sneaker_Finder Ruby Gem. I want to take some time to document my findings. I also want to share the key take away points in my learning journey thus far. I believe this gem summarizes it well. Let's begin... 
 
+# Scraping 
+
 The purpose of this gem is to scrape the inventory from a well-known e-commerce store that has a collection of rare, hard-to-find sneakers that collectors are looking for. I used `open-uri` to make an https request, and I used the wonderful `nokogiri` gem to parse the HTML into iterable objects. That is where the real fun begins! Note an example of this code below:
 
 `doc = Nokogiri::HTML(open(https://uharston.github.io/))`
@@ -16,6 +18,8 @@ The purpose of this gem is to scrape the inventory from a well-known e-commerce 
 The value of the `doc` variable is the entire web page's HTML. We can call `#css` on `doc` which allows us to specify which data on the web page we would like to isolate by using HTML tag, CSS classes, and/or id's as arguments. Once we do this we are set to iterate. 
 
 `doc.css(".ProductList li")`
+
+# Iterators
 
 One thing I wanted to emphasize is how important it is to know the return values for iterators. Much time can be saved when we are aware of this. We can illustrate this well with `#map` vs `#each`.  In developing this gem I used both of these iterators. 
 
@@ -60,6 +64,8 @@ In the below example we see that `#each` is used to simply modify the content of
         hash
     end
 ```
+
+# Final Words
 
 So it is quite amazing what you can do with common iterators like `#map` and `#each`. There are so many things I can share regarding this project. The key take away point for me is this: **Know what your methods return.**
 
