@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "STATE your problem..."
-date:       2020-09-30 05:33:14 +0000
+date:       2020-09-30 01:33:15 -0400
 permalink:  state_your_problem
 ---
 
 
-This post comes just before the brink of completing the Flatiron Full-Time Software Enginneering Course. Feels pretty good...anyways. 
+*This post comes just before the brink of completing the Flatiron Full-Time Software Enginneering Course. Feels pretty good...anyways. *
 
-Lets talk a little bit about Redux. If you don't know Redux, it is a method of managing all of a React application's state into one convinenant place, or how they like to say, inside the store. Think store like storehouse. Yes even simple applications can get cluttered quick, so instead of trying to find where you left your socks (maybe under the bed??), you can look inside the Redux storehouse. Your socks will always be nice and neatly placed in the storehouse. 
+Lets talk a little bit about Redux. If you don't know Redux, it is a method of managing all of a React application's state into one convenient place, or how they like to say, inside the Store. Think store like storehouse. Yes even simple applications can get cluttered quick, so instead of trying to find where you left your socks (maybe under the bed??), you can look inside the Redux storehouse. Your socks will always be nice and neatly placed in the storehouse. 
 
 So enough metaphors, let's see some examples! 
 
