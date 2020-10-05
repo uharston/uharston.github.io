@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Go Fetch in Ruby - Faraday Gem "
-date:       2020-10-05 18:59:21 +0000
+date:       2020-10-05 14:59:22 -0400
 permalink:  go_fetch_in_ruby_-_faraday_gem
 ---
 
