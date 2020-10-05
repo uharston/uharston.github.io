@@ -14,9 +14,9 @@ This is a valid question. The answer has to do with making your application more
 
 You are going to need this in your Gemfile `gem 'faraday', '~> 0.9.2'`. 
 
-Then...`bundle install` in the command line and don't forget to throw a little `require faraday` in your code. 
+Then `bundle install` in the command line and don't forget to throw a little `require 'faraday'` in your code. 
 
-Now...throw everything that you ever had in mind on how to do fetch calls in javascript away. Let me know when you have finished that.  
+Now...throw everything that you ever had in mind on how to do fetch calls in Javascript away. Let me know when you have finished that.  
 
 # The Example 
 
@@ -63,7 +63,7 @@ A couple of different things are happening here making it different from the Jav
 4. Finally we assign `JSON.parse(token_response.body)` , which converts that data into hash, to the `data` variable.  
 
 
-Wow, well that wasn't so hard! 
+Wow, well that wasn't so hard! For get request just swap the `.post` out with `.get`. 
 
 # Final Words 
 There is a shortage of articles on how to do server-side API calls in Ruby so I hope this brief demonstration proves to be helpful. It is a good thing to learn in terms of exposing less of your applications logic to the front-end where it has the potential of being tampered with. Definitely look more into it if you don't already know how to do it. 
